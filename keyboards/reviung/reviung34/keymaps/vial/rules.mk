@@ -6,9 +6,15 @@ COMMAND_ENABLE = no        # Commands for debug and configuration
 NKRO_ENABLE = yes            # USB Nkey Rollover
 
 # reviung34_rgb
-RGBLIGHT_ENABLE = yes
+RGBLIGHT_ENABLE = no
 
 VIA_ENABLE = yes
 VIAL_ENABLE = yes
-QMK_SETTINGS = no
-COMBO_ENABLE = no
+QMK_SETTINGS = yes
+COMBO_ENABLE = yes
+
+# LTO_ENABLE = yes
+SPACE_CADET_ENABLE = yes
+KEY_OVERRIDE_ENABLE = yes
+
+SRC += features/caps_word.c

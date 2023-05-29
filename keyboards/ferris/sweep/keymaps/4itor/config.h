@@ -1,14 +1,19 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+
 #pragma once
 
-#define VIAL_KEYBOARD_UID {0xB8, 0x68, 0xB9, 0x6C, 0x13, 0x2E, 0xA7, 0xDD}
-#define VIAL_UNLOCK_COMBO_ROWS {0, 3}
-#define VIAL_UNLOCK_COMBO_COLS {0, 5}
+#define VIAL_KEYBOARD_UID {0x47, 0x97, 0x7E, 0x32, 0xC9, 0xAC, 0x13, 0xF3}
 
-// v6 Frood MicroController
-#define RP2040_FLASH_GD25Q64CS
+// #define VIAL_INSECURE
+
+// #define VIAL_UNLOCK_COMBO_ROWS { 2, 3, 0, 0, 0 }
+// #define VIAL_UNLOCK_COMBO_COLS { 0, 1, 0, 2, 4 }
+
+#define VIAL_UNLOCK_COMBO_ROWS { 0, 4 }
+#define VIAL_UNLOCK_COMBO_COLS { 0, 4 }
 
 // Number of Key Ovverides
-#define VIAL_KEY_OVERRIDE_ENTRIES 4
+#define VIAL_KEY_OVERRIDE_ENTRIES 16
 
 // Declare Low Power USB usage
 #define USB_MAX_POWER_CONSUMPTION 100
@@ -16,7 +21,6 @@
 // Combo Settings
 #define COMBO_TERM 40
 #define EXTRA_SHORT_COMBOS
-
 
 // Number of layers
 #define DYNAMIC_KEYMAP_LAYER_COUNT 16

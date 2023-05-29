@@ -1,3 +1,6 @@
+// this is the style you want to emulate.
+// This is the canonical layout file for the Quantum project. If you want to add another keyboard,
+
 #include QMK_KEYBOARD_H
 #include "features/caps_word.h"
 
@@ -58,13 +61,16 @@ enum custom_keycodes {
 #define KC_GUTA GUI_T(KC_TAB)
 #define KC_CLGV CTL_T(KC_GRV)
 
-#define LAYOUT LAYOUT_reviung34
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QRTY] = LAYOUT(
   // Combos:
-  //  U+I+O -> Esc
+  //  U+I+O -> Esc// #define VIAL_UNLOCK_COMBO_ROWS { 2, 3, 0, 0, 0 }
+// #define VIAL_UNLOCK_COMBO_COLS { 0, 1, 0, 2, 4 }
+
   //  W+E+R -> Esc
+  //  R+T -> (     Y+U -> )
+  //  F+G -> {     H+J -> }
+  //  V+B -> [     N+M -> ]
   //  F+J -> CapsWord
   //,--------------------------------------------.  ,--------------------------------------------.
   //|    Q   |    W   |    E   |    R   |    T   |  |    Y   |    U   |    I   |    O   |    P   |

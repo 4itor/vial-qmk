@@ -1,14 +1,23 @@
+// Copyright 2023 4itor (@4itor)
+// SPDX-License-Identifier: GPL-2.0-or-later
+
 #pragma once
 
-#define VIAL_KEYBOARD_UID {0xB8, 0x68, 0xB9, 0x6C, 0x13, 0x2E, 0xA7, 0xDD}
-#define VIAL_UNLOCK_COMBO_ROWS {0, 3}
-#define VIAL_UNLOCK_COMBO_COLS {0, 5}
+/*
+ * Feature disable options
+ *  These options are also useful to firmware size reduction.
+ */
 
-// v6 Frood MicroController
-#define RP2040_FLASH_GD25Q64CS
+/* disable debug print */
+// #define NO_DEBUG
 
-// Number of Key Ovverides
-#define VIAL_KEY_OVERRIDE_ENTRIES 4
+/* disable print */
+// #define NO_PRINT
+
+/* disable action features */
+//#define NO_ACTION_LAYER
+//#define NO_ACTION_TAPPING
+//#define NO_ACTION_ONESHOT
 
 // Declare Low Power USB usage
 #define USB_MAX_POWER_CONSUMPTION 100
@@ -17,12 +26,11 @@
 #define COMBO_TERM 40
 #define EXTRA_SHORT_COMBOS
 
-
 // Number of layers
-#define DYNAMIC_KEYMAP_LAYER_COUNT 16
+#define DYNAMIC_KEYMAP_LAYER_COUNT 8
 
 // Configure the global tapping term (default: 200ms)
-#define TAPPING_TERM 220
+#define TAPPING_TERM 210
 
 // Prevent normal rollover on alphas from accidentally triggering mods.
 #define IGNORE_MOD_TAP_INTERRUPT

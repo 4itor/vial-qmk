@@ -1,0 +1,13 @@
+{
+    "keyboard": "reviung/reviung34",
+    "keymap": "vial",
+    "layers": [
+        ["KC_Q", "KC_W", "KC_E", "KC_R", "KC_T", "KC_Y", "KC_U", "KC_I", "KC_O", "KC_P", "GUI_A", "ALT_S", "CTL_D", "SFT_F", "KC_G", "KC_H", "SFT_J", "CTL_K", "ALT_L", "GUI_SCLN", "KC_Z", "KC_X", "KC_C", "KC_V", "KC_B", "KC_N", "KC_M", "KC_COMM", "KC_DOT", "KC_SLSH", "LT(_NUMB, KC_TAB)", "LT(_MOUS, KC_BSPC)", "LT(_NAVI, KC_SPC)", "LT(_SYMB, KC_ENT)"],
+        ["KC_1", "KC_2", "KC_3", "KC_4", "KC_5", "KC_6", "KC_7", "KC_8", "KC_9", "KC_0", "KC_LGUI", "KC_LALT", "KC_LCTL", "KC_LSFT", "KC_F11", "KC_F12", "KC_RSFT", "KC_RCTL", "KC_RALT", "KC_RGUI", "KC_F1", "KC_F2", "KC_F3", "KC_F4", "KC_F5", "KC_F6", "KC_F7", "KC_F8", "KC_F9", "KC_F10", "MO(_ADJT)", "KC_BSPC", "KC_SPC", "MO(_ADJT)"],
+        ["KC_EXLM", "KC_AT", "KC_HASH", "KC_DLR", "KC_PERC", "KC_CIRC", "KC_AMPR", "KC_ASTR", "KC_LPRN", "KC_RPRN", "_void_", "KC_TILD", "KC_MINS", "KC_PLUS", "KC_PIPE", "KC_GRV", "KC_DQT", "KC_QUOT", "_void_", "_void_", "_void_", "_void_", "KC_UNDS", "KC_EQL", "KC_BSLS", "KC_LCBR", "KC_RCBR", "KC_LBRC", "KC_RBRC", "_void_", "MO(_ADJT)", "KC_BSPC", "KC_SPC", "MO(_ADJT)"],
+        ["_void_", "_void_", "_void_", "_void_", "_void_", "KC_HOME", "KC_PGDN", "KC_PGUP", "KC_END", "_void_", "KC_LGUI", "KC_LALT", "KC_LCTL", "KC_LSFT", "_void_", "KC_LEFT", "KC_DOWN", "KC_UP", "KC_RGHT", "_void_", "_void_", "_void_", "_void_", "_void_", "_void_", "_void_", "_void_", "_void_", "_void_", "_void_", "HYPR(KC_SPC)", "KC_DEL", "_void_", "_void_"],
+        ["K_Quit", "K_Close", "K_ALTBP", "K_ALTAB", "_void_", "KC_ACL0", "KC_ACL1", "KC_ACL2", "_void_", "_void_", "KC_LGUI", "KC_LALT", "KC_LCTL", "KC_LSFT", "KC_BSPC", "KC_MS_L", "KC_MS_D", "KC_MS_U", "KC_MS_R", "_void_", "K_Undo", "K_Cut", "K_Copy", "K_Paste", "KC_DEL", "KC_WH_L", "KC_WH_D", "KC_WH_U", "KC_WH_R", "_void_", "_void_", "_void_", "KC_BTN1", "KC_BTN2"],
+        ["CAPS_WRD", "_void_", "_void_", "BL_TOGG", "BL_BRTG", "KC_MPLY", "KC_MPRV", "KC_MNXT", "_void_", "_void_", "_void_", "_void_", "_void_", "_void_", "_void_", "KC_MUTE", "KC_VOLD", "KC_VOLU", "_void_", "_void_", "_void_", "_void_", "_void_", "_void_", "_void_", "_void_", "KC_BRID", "KC_BRIU", "_void_", "_void_", "_void_", "_void_", "_void_", "_void_"]
+    ],
+    "layout": "LAYOUT_reviung34"
+}
