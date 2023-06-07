@@ -6,4 +6,4 @@ COMBO_ENABLE = yes
 SRC += features/caps_word.c
 
 LTO_ENABLE = yes
-TAP_DANCE_ENABLE = no
+TAP_DANCE_ENABLE = yes
