@@ -9,6 +9,7 @@
 #include "mousekey.h"
 #include "process_combo.h"
 #include "action_tapping.h"
+#include "keycode_config.h"
 
 static int eeprom_settings_get(const qmk_settings_proto_t *proto, void *setting, size_t maxsz);
 static int eeprom_settings_set(const qmk_settings_proto_t *proto, const void *setting, size_t maxsz);
@@ -263,12 +264,16 @@ bool get_permissive_hold(uint16_t keycode, keyrecord_t *record) {
     return QS.tapping & 1;
 }
 
-bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
-    return QS.tapping & 2;
+bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
+    return !(QS.tapping & 2);
 }
 
-bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
-    return QS.tapping & 4;
+uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
+    if (QS.tapping & 4) {
+        return 0;
+    } else {
+        return QS.tapping_term;
+    }
 }
 
 bool get_retro_tapping(uint16_t keycode, keyrecord_t *record) {
